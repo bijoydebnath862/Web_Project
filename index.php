@@ -66,9 +66,11 @@
   </a>
   <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Slide Next</span>
   </a>
 </div>
+
+
 	
 </body>
 </html>
