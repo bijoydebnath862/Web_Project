@@ -77,11 +77,11 @@
 				</div>
 				<div class="form-group">
 					<label>Email:</label>
-					<input type="text" name="email" value="<?php echo $email;?>" class="form-control" required="">
+					<input type="email" name="email" value="<?php echo $email;?>" class="form-control" required="">
 				</div>
 				<div class="form-group">
 					<label>Mobile</label>
-					<input type="text" name="mobile" value="<?php echo $mobile;?>" class="form-control" required="">
+					<input type="number" name="mobile" value="<?php echo $mobile;?>" class="form-control" required="">
 				</div>
 				<div class="form-group">
 					<label>Address:</label>

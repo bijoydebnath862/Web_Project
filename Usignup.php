@@ -76,7 +76,7 @@
 				</div>
 				<div class="form-group">
 					<label for="name">Email ID:</label>
-					<input type="text" name="email" class="form-control" required>
+					<input type="email" name="email" class="form-control" required>
 				</div>
 				<div class="form-group">
 					<label for="name">Password:</label>
@@ -84,7 +84,7 @@
 				</div>
 				<div class="form-group">
 					<label for="name">Mobile Number:</label>
-					<input type="text" name="mobile" class="form-control" required>
+					<input type="number" name="mobile" class="form-control" required>
 				</div>
 				<div class="form-group">
 					<label for="name">Address:</label>
