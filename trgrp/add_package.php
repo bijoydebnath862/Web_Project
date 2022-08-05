@@ -62,7 +62,7 @@ session_start();
           <input type="text" name="package_name" class="form-control" required="">
         </div>
         <div class="form-group">
-          <label>Tour Group:</label>
+          <label>Tour Group ID:</label>
           <input type="text" name="tg" class="form-control" value="<?php echo $_SESSION['id']; ?>" required="">
         </div>
 
@@ -75,6 +75,12 @@ session_start();
           <label>Image</label>
           <input type="file" name="package_image" id="package_image" class="form-control">
         </div>
+
+		<div class="form-group">
+          <label>Description</label>
+          <textarea rows="3" cols="40" class="form-control" name="description"></textarea>
+        </div>
+
         <button class="btn btn-primary" name="add_package">Add package</button>
 
       </form>
@@ -91,7 +97,7 @@ if (isset($_POST['add_package'])) {
   $package_name = $_POST['package_name'];
   $tg = $_POST['tg'];
   $package_price = $_POST['package_price'];
-
+  $description = $_POST['description'];
   $img_name = $_FILES['package_image']['name'];
 
   //echo $img_name;
@@ -106,8 +112,8 @@ if (isset($_POST['add_package'])) {
   $db = mysqli_select_db($connection, "tour");
   // $query = "insert into packages values(null,'$_POST[package_name]','$_POST[tg]',$_POST[package_price],'$package_image')";
 
-  $query = "INSERT INTO packages (package_name, tg_id, package_price, package_image) 
-  VALUES ('$package_name', '$tg', '$package_price', '$package_image');";
+  $query = "INSERT INTO packages (package_name, tg_id, package_price, package_image, description) 
+  VALUES ('$package_name', '$tg', '$package_price', '$package_image','$description');";
 
 
   $query_run = mysqli_query($connection, $query);

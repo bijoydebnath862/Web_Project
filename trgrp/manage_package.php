@@ -51,36 +51,33 @@
 
 	<br><br>
 	<div class="row">
-		<div class="col-md-2"></div>
+		<div class="col-md-4"></div>
 		<div class="col-md-8">
-			<table class="table table-bordered table-hover">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Price</th>
-						<th>Action</th>
-					</tr>
-				</thead>
 				<?php
-					$tg_id=$_SESSION['id'];
-					$connection = mysqli_connect("localhost","root","");
-					$db = mysqli_select_db($connection,"tour");
-					$query = "select * from packages where tg_id=$tg_id";
-					$query_run = mysqli_query($connection,$query);
-					while($row = mysqli_fetch_assoc($query_run)){
-						?>
-						<tr>
-							<td><?php echo $row['package_name'];?></td>
-							<td><?php echo $row['package_price'];?></td>
-							<td>
-								<button class="btn" name=""><a href="edit_package.php?bn=<?php echo $row['package_id'];?>">Edit</a></button>
-								<button class="btn" name=""><a href="delete_package.php?bn=<?php echo $row['package_id'];?>">Delete</a></button>
-							</td>
-						</tr>
-						<?php
-					}
+				$connection = mysqli_connect("localhost", "root", "");
+				$db = mysqli_select_db($connection, "tour");
+				$tg_id=$_SESSION['id'];
+				$query = "select * from packages where tg_id=$tg_id";
+				$query_run = mysqli_query($connection, $query);
+				while ($row = mysqli_fetch_assoc($query_run)) {
+					$package_image = $row['package_image'];
+					$description = $row['description'];
 				?>
-			</table>
+					<div class="card d-flex p-2" style="width: 30rem; margin: 20px;">
+						<img class="card-img-top" src="../images/<?php echo $package_image; ?>" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title"><?php echo $row['package_name']; ?></h5>
+							<p>tour group id: <?php echo $row['tg_id']; ?></p>
+							<p>package price: : <?php echo $row['package_price']; ?></p>
+							<p class="card-text"><?php echo $description; ?></p>
+							<a href="edit_package.php?bn=<?php echo $row['package_id']; ?>" class="btn btn-primary">Edit</a>
+							<a href="delete_package.php?bn=<?php echo $row['package_id']; ?>" class="btn btn-primary">Delete</a>
+						</div>
+					</div>
+				<?php
+				}
+				?>
+
 		</div>
 		<div class="col-md-2"></div>
 	</div>
