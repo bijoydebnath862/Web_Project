@@ -74,7 +74,7 @@
 				<div class="card-header">Registered Users:</div>
 				<div class="card-body">
 					<p class="card-text">No. of total users: <?php echo get_user_count();?></p>
-					<a href="regusers.php" class="btn btn-danger" target="_blank">View Registered Users</a>
+					<a href="regusers.php" class="btn btn-danger">View Registered Users</a>
 				</div>
 			</div>
 		</div>
@@ -83,7 +83,7 @@
 				<div class="card-header">Packages:</div>
 				<div class="card-body">
 					<p class="card-text">No. of availbale Packages:<?php echo get_package_count();?> </p>
-					<a href="regpackage.php" class="btn btn-primary" target="_blank">View Packages</a>
+					<a href="regpackage.php" class="btn btn-primary">View Packages</a>
 				</div>
 			</div>
 		</div>
@@ -93,7 +93,7 @@
 				<div class="card-header">Registered Tour Group:</div>
 				<div class="card-body">
 					<p class="card-text">No. of availbale Tour Groups: <?php echo get_tg_count();?></p>
-					<a href="regtg.php" class="btn btn-info" target="_blank">View Tour Group</a>
+					<a href="regtg.php" class="btn btn-info">View Tour Group</a>
 				</div>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 				<div class="card-header">Issued Bookings:</div>
 				<div class="card-body">
 					<p class="card-text">No. Issued Bookings: <?php echo get_issued_booking_count();?></p>
-					<a href="view_issued_booking.php" class="btn btn-success" target="_blank">View Issued bookings</a>
+					<a href="view_issued_booking.php" class="btn btn-success">View Issued bookings</a>
 				</div>
 			</div>
 		</div>

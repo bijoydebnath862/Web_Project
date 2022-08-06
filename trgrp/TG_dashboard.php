@@ -75,7 +75,7 @@
 				<div class="card-header">Issued Bookings:</div>
 				<div class="card-body">
 					<p class="card-text">No. of Issued Bookings: <?php echo get_TG_issue_booking_count();?> </p>
-					<a href="view_issued_booking.php" class="btn btn-danger" target="_blank">View Issued Bookings</a>
+					<a href="view_issued_booking.php" class="btn btn-danger" >View Issued Bookings</a>
 				</div>
 			</div>
 		</div>

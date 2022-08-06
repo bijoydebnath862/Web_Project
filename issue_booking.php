@@ -69,7 +69,7 @@
 					<input type="text" name="package" class="form-control" value = "<?php echo $package_name;?>" required="">
 				</div>
 				<div class="form-group">
-					<label>Tour Group Id:</label>
+					<label>Tour Group:</label>
 					<input type="text" name="tg_name" class="form-control" value = "<?php echo $tg;?>" required="">
 				</div>
 				<div class="form-group">
@@ -78,7 +78,7 @@
 				</div>
 				<div class="form-group">
 					<label>No Of Tavellers:</label>
-					<input type="text" name="no_users" class="form-control" required="">
+					<input type="number" name="no_users" class="form-control" required="">
 				</div>
 				<div class="form-group">
 					<label>Issue Date:</label>

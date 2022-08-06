@@ -6,7 +6,7 @@
 	$tg = "";
 	$status = "";
 	$issue_date = "";
-	$query = "select package_name,tg,status,issue_date from issued_bookings where guest_id = $_SESSION[id]";
+	$query = "select * from issued_bookings where guest_id = $_SESSION[id]";
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,6 +66,7 @@
 					<th>Tour Group:</th>
 					<th>No of Travellers:</th>
 					<th>Issue Date:</th>
+					<th> Action </th>
 				</tr>
 				<?php
 					$query_run = mysqli_query($connection,$query);
@@ -80,6 +81,9 @@
 							<td><?php echo $tg;?></td>
 							<td><?php echo $status;?></td>
 							<td><?php echo $issue_date;?></td>
+							<td>
+								<button class="btn" name=""><a href="delete_bookings.php?bn=<?php echo $row['s_no']; ?>">Cancel Booking</a></button>
+							</td>
 						</tr>
 						<?php
 					}
