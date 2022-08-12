@@ -10,6 +10,14 @@
 ?>
 <!DOCTYPE html>
 <html>
+<style>
+body {
+  background-image: url('slideshow/14.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+</style>
 <head>
 	<title>User Dashboard</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width,intial-scale=1">

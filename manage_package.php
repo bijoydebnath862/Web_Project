@@ -17,6 +17,14 @@
   			height: 450px;
   		}
   	</style>
+			<style>
+body {
+  background-image: url('slideshow/15.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">

@@ -19,21 +19,13 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="admin_dashboard">Bijoy Travels</a>
+				<a class="navbar-brand" href="../index.php">Bijoy Travels</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item">
 					<a class="nav-link" href="index.php">Admin Login</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown">User Login</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../Ulogin.php">Guest</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="../trgrp/TGlogin.php">Tour Group</a>
-						</div>
-				</li>
+				
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown">Register</a>
@@ -43,12 +35,15 @@
 							<a class="dropdown-item" href="../trgrp/TGsignup.php">Tour Group</a>
 						</div>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../contact.php">Contact info</a>
+				</li>
 			</ul>
 		</div>
 	</nav><br>
 	<span><marquee>Let's Make your Tour experience Better.  Our office opens at 8:00 AM and close at 8:00 PM</marquee></span><br><br>
 	<div class="row">
-		<div class="col-md-4" id="side_bar">
+		<!-- <div class="col-md-4" id="side_bar">
 			
 			<h5>What we provide ?</h5>
 			<ul>
@@ -65,7 +60,8 @@
 				<li>Email:bijoydebnath862@gmail.com</li>
 				
 			</ul>
-		</div>		
+		</div>		 -->
+		<div class="col-md-2"></div>
 		<div class="col-md-8" id="main_content">
 			<center><h3>Admin Login Form</h3></center>
 			<form action="" method="post">
@@ -104,6 +100,7 @@
 				}
 			?>
 	</div>
+	<div class="col-md-2"></div>
 	</div>
 </body>
 </html>

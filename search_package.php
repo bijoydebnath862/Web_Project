@@ -18,6 +18,14 @@ session_start();
 			height: 450px;
 		}
 	</style>
+	<style>
+body {
+  background-image: url('slideshow/13.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+</style>
 </head>
 
 <body>

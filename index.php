@@ -22,9 +22,6 @@
 				<a class="navbar-brand" href="index.php">Bijoy Travels</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="nav-item">
-					<a class="nav-link" href="admin/index.php">Admin Login</a>
-				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown">User Login</a>
@@ -43,7 +40,9 @@
 							<a class="dropdown-item" href="trgrp/TGsignup.php">Tour Group</a>
 						</div>
 				</li>
-				
+				<li class="nav-item">
+					<a class="nav-link" href="contact.php">Contact info</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -51,13 +50,13 @@
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="slideshow/1.jpg" class="d-block w-100" alt="...">
+      <img src="slideshow/12.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="slideshow/2.jpg" class="d-block w-100" alt="...">
+      <img src="slideshow/19.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="slideshow/3.jpg" class="d-block w-100" alt="...">
+      <img src="slideshow/21.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
