@@ -54,9 +54,7 @@ body {
 			</ul>
 		</div>
 	</nav><br>
-	<span>
-		<marquee>Let's Make your Tour experience Better. Our office opens at 8:00 AM and close at 8:00 PM</marquee>
-	</span><br><br>
+	<br><br>
 	<?php
 				session_start();
 

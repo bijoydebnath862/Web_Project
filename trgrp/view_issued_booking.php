@@ -75,6 +75,7 @@ $query = "select * from issued_bookings left join guest on issued_bookings.guest
 						<th>User Address:</th>
 						<th>No of Travellers:</th>
 						<th>Issue Date:</th>
+						<th>Travellers Info</th>
 						<th> Action </th>
 					</tr>
 					<?php
@@ -96,6 +97,9 @@ $query = "select * from issued_bookings left join guest on issued_bookings.guest
 							<td><?php echo $address; ?></td>
 							<td><?php echo $status; ?></td>
 							<td><?php echo $issue_date; ?></td>
+							<td>
+								<button class="btn" name=""><a href="travellersinfo.php?bn=<?php echo $row['s_no']; ?>">Travellers info</a></button>
+							</td>
 							<td>
 								<button class="btn" name=""><a href="delete_bookings.php?bn=<?php echo $row['s_no']; ?>">Cancel Booking</a></button>
 							</td>
